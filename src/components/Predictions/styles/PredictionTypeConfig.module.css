@@ -1,0 +1,14 @@
+.predictionTypeSection {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: all 0.2s ease;
+  border-top: 3px solid #9f7aea; /* 与右列边框颜色一致 */
+}
+
+.predictionTypeSection h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

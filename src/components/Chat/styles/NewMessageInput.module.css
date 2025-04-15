@@ -1,0 +1,102 @@
+.newMessageInput {
+  margin-top: auto;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
+
+.messageTypeSelector {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.messageTypeSelector label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.messageTypeSelector label:hover {
+  background-color: #f1f5f9;
+}
+
+.messageTypeSelector label.selected {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.messageTypeSelector input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radioIcon {
+  font-size: 1.1rem;
+}
+
+.messageInputContainer {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.messageInputContainer textarea {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.messageInputContainer textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+}
+
+.addMessageButton {
+  align-self: flex-end;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.addMessageButton:hover {
+  background-color: #5a52d5;
+  transform: translateY(-2px);
+}
+
+.addMessageButton:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.charCount {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+
+@media (max-width: 768px) {
+  .messageTypeSelector {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

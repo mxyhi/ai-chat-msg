@@ -1,0 +1,181 @@
+.predictionItem {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #9f7aea; /* 默认边框颜色 */
+  transition: all 0.3s;
+  margin-bottom: 0.3rem;
+  position: relative;
+  width: calc(100% - 4px); /* 减去动画移动的距离，防止溢出 */
+}
+
+/* 正向预测样式 */
+.positive {
+  border-left-color: #48bb78; /* 绿色，表示正向 */
+}
+
+.positive h3 {
+  color: #2f855a;
+}
+
+.positive h3::before {
+  background-color: #48bb78;
+}
+
+/* 负向预测样式 */
+.negative {
+  border-left-color: #f56565; /* 红色，表示负向 */
+}
+
+.negative h3 {
+  color: #c53030;
+}
+
+.negative h3::before {
+  background-color: #f56565;
+}
+
+/* 中立预测样式 */
+.neutral {
+  border-left-color: #4299e1; /* 蓝色，表示中立 */
+}
+
+.neutral h3 {
+  color: #2b6cb0;
+}
+
+.neutral h3::before {
+  background-color: #4299e1;
+}
+
+.predictionItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateX(4px);
+}
+
+.predictionItem h3 {
+  color: #6366f1;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.predictionType {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #718096;
+  margin-left: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: normal;
+}
+
+.timeIcon {
+  font-size: 0.7rem;
+  margin-right: 0.1rem;
+}
+
+.predictionItem h3::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #6366f1;
+  border-radius: 50%;
+}
+
+.predictionContent {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: #4a5568;
+  max-height: 400px; /* 增加高度确保显示全部内容 */
+  overflow-y: auto;
+  overflow-x: hidden; /* 隐藏水平滚动条 */
+  word-wrap: break-word; /* 确保文本自动换行 */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.typing::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: #6366f1;
+}
+
+.streaming {
+  border-left-color: #6c63ff;
+  animation: pulse 2s infinite;
+}
+
+.predictionActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.copyButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #f1f5f9;
+  color: #4a5568;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copyButton:hover {
+  background-color: #e2e8f0;
+  color: #2d3748;
+}
+
+.copyButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.copied {
+  background-color: #c6f6d5;
+  color: #2f855a;
+}
+
+.lastItem {
+  margin-bottom: 0; /* 移除最后一个项目的底部边距 */
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.2);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(108, 99, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(108, 99, 255, 0);
+  }
+}

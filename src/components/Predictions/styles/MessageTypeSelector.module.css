@@ -1,0 +1,44 @@
+.messageTypeSelector {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.messageTypeSelector label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.messageTypeSelector label:hover {
+  background-color: #f1f5f9;
+}
+
+.selected {
+  background-color: #6c63ff;
+  color: white !important;
+}
+
+.messageTypeSelector input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radioIcon {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .messageTypeSelector {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

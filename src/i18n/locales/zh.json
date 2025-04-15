@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "AI聊天预测工具",
+    "footer": "基于 {{modelName}} 模型提供的 AI 能力"
+  },
+  "config": {
+    "title": "API配置",
+    "apiKey": "API密钥",
+    "apiUrl": "API地址",
+    "model": "模型",
+    "save": "保存",
+    "cancel": "取消",
+    "saved": "配置已保存",
+    "placeholder": {
+      "apiKey": "输入您的API密钥",
+      "apiUrl": "API地址",
+      "model": "模型ID"
+    }
+  },
+  "background": {
+    "title": "背景上下文",
+    "clear": "清除",
+    "clearTitle": "清除背景上下文",
+    "placeholder": "在这里输入背景上下文信息...",
+    "charCount": "{{count}} 个字符"
+  },
+  "chat": {
+    "title": "聊天上下文",
+    "clear": "清除",
+    "clearTitle": "清除所有消息",
+    "empty": "暂无聊天消息，请添加新消息",
+    "newMessage": {
+      "self": "我的消息",
+      "other": "对方的消息",
+      "placeholder": "输入新消息...",
+      "add": "添加",
+      "charCount": "{{count}} 个字符"
+    }
+  },
+  "prediction": {
+    "title": "预测类型",
+    "types": {
+      "self": "预测我的回复",
+      "other": "预测对方的回复"
+    },
+    "generate": "生成预测",
+    "generating": "生成中...",
+    "results": "预测结果",
+    "streaming": "生成中...",
+    "waiting": "等待生成...",
+    "copy": "复制",
+    "copied": "已复制",
+    "copyTitle": "复制到剪贴板",
+    "predictionTypes": {
+      "positive": "正向",
+      "neutral": "中立",
+      "negative": "负向"
+    }
+  },
+  "clearData": {
+    "button": "清除所有数据",
+    "confirm": "确认清除所有数据？"
+  },
+  "modelSelector": {
+    "placeholder": "搜索或输入模型ID...",
+    "use": "使用",
+    "useTitle": "使用此模型ID",
+    "loading": "加载模型中...",
+    "noApiKey": "未提供API密钥。使用默认模型。",
+    "noResults": "未找到模型"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  },
+  "reasoning": {
+    "title": "推理过程",
+    "thinking": "思考中...",
+    "empty": "无推理过程"
+  }
+}

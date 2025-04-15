@@ -1,0 +1,32 @@
+.languageSwitcher {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.languageButton {
+  background-color: #f1f5f9;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 2.5rem;
+  justify-content: center;
+}
+
+.languageButton:hover {
+  background-color: #e2e8f0;
+}
+
+.languageButton.active {
+  background-color: #6c63ff;
+  color: white;
+}

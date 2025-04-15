@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "AI Chat Prediction Tool",
+    "footer": "Powered by {{modelName}} model"
+  },
+  "config": {
+    "title": "API Configuration",
+    "apiKey": "API Key",
+    "apiUrl": "API URL",
+    "model": "Model",
+    "save": "Save",
+    "cancel": "Cancel",
+    "saved": "Configuration saved",
+    "placeholder": {
+      "apiKey": "Enter your API key",
+      "apiUrl": "API URL",
+      "model": "Model ID"
+    }
+  },
+  "background": {
+    "title": "Background Context",
+    "clear": "Clear",
+    "clearTitle": "Clear background context",
+    "placeholder": "Enter background context information here...",
+    "charCount": "{{count}} characters"
+  },
+  "chat": {
+    "title": "Chat Context",
+    "clear": "Clear",
+    "clearTitle": "Clear all messages",
+    "empty": "No chat messages yet, please add a new message",
+    "newMessage": {
+      "self": "My message",
+      "other": "Other's message",
+      "placeholder": "Enter new message...",
+      "add": "Add",
+      "charCount": "{{count}} characters"
+    }
+  },
+  "prediction": {
+    "title": "Prediction Type",
+    "types": {
+      "self": "Predict my response",
+      "other": "Predict other's response"
+    },
+    "generate": "Generate Predictions",
+    "generating": "Generating...",
+    "results": "Prediction Results",
+    "streaming": "Generating...",
+    "waiting": "Waiting for generation...",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyTitle": "Copy to clipboard",
+    "predictionTypes": {
+      "positive": "Positive",
+      "neutral": "Neutral",
+      "negative": "Negative"
+    }
+  },
+  "clearData": {
+    "button": "Clear All Data",
+    "confirm": "Confirm clearing all data?"
+  },
+  "modelSelector": {
+    "placeholder": "Search or enter model ID...",
+    "use": "Use",
+    "useTitle": "Use this model ID",
+    "loading": "Loading models...",
+    "noApiKey": "No API key provided. Using default models.",
+    "noResults": "No models found"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  },
+  "reasoning": {
+    "title": "Reasoning Process",
+    "thinking": "Thinking...",
+    "empty": "No reasoning process"
+  }
+}

@@ -1,0 +1,150 @@
+.modelSelector {
+  position: relative;
+  width: 100%;
+}
+
+.modelInputContainer {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.modelInputContainer.focused {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.1);
+}
+
+.modelInput {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: transparent;
+  color: #4a5568;
+}
+
+.modelInput:focus {
+  outline: none;
+}
+
+.modelInput::placeholder {
+  color: #a0aec0;
+}
+
+.dropdownToggle {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  z-index: 1;
+}
+
+.useCustomButton {
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.4rem 0.8rem;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.useCustomButton:hover {
+  background-color: #5a52d5;
+}
+
+.modelDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  margin-top: 0.5rem;
+}
+
+.modelsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modelItem {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.modelItem:hover {
+  background-color: #f1f5f9;
+}
+
+.modelItem.highlighted {
+  background-color: #f1f5f9;
+}
+
+.modelItem.selected {
+  background-color: #edf2f7;
+}
+
+.modelId {
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.2rem;
+}
+
+.modelName {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.loadingModels {
+  padding: 1rem;
+  text-align: center;
+  color: #a0aec0;
+}
+
+.noResults {
+  padding: 1rem;
+  text-align: center;
+  color: #a0aec0;
+}
+
+.selectedModelDisplayInline {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+
+.selectedModelId {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.selectedModelName {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-top: 0.2rem;
+}

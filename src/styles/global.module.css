@@ -1,0 +1,94 @@
+/* 全局样式 */
+.root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 标题样式 */
+.heading1 {
+  text-align: center;
+  color: #6c63ff;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.heading2 {
+  color: #4a5568;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.heading2::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 1em;
+  background-color: #6c63ff;
+  border-radius: 2px;
+}
+
+/* 通用部分样式 */
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 0;
+}
+
+.section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  border: none;
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+/* 通用按钮样式 */
+.clearButton {
+  background-color: transparent;
+  color: #a0aec0;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.clearButton:hover {
+  background-color: #f1f5f9;
+  color: #4a5568;
+}
+
+/* 字符计数 */
+.charCount {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #a0aec0;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding: 1rem;
+  }
+
+  .heading1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,14 @@
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 0; /* 允许在flex布局中收缩 */
+  height: auto; /* 自适应高度 */
+  max-height: calc(100vh - 120px); /* 增加最大高度 */
+  overflow-y: auto; /* 内容超出时显示滚动条 */
+  padding: 0.8rem; /* 减小内边距 */
+  border-radius: 12px;
+  background-color: #f0f4ff; /* 浅蓝色背景 */
+  border-left: 3px solid #6c63ff; /* 蓝紫色边框 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}

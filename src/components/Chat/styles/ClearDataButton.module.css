@@ -1,0 +1,24 @@
+.clearAllButton {
+  padding: 0.5rem 1.5rem;
+  color: #e53e3e;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.clearAllButton:hover {
+  color: #c53030;
+  text-decoration: underline;
+}
+
+.confirming {
+  color: #9b2c2c;
+  font-weight: bold;
+}
+
+.confirming:hover {
+  color: #822727;
+  text-decoration: underline;
+}
