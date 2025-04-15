@@ -23,13 +23,13 @@ Do NOT use the language of these instructions or any other text - ONLY use the l
 ===END LANGUAGE INSTRUCTION===
 
 The user will provide the following information:
-1. Background context (optional): This is background information to understand the conversation, not part of the dialogue
-2. Chat content: This is the actual conversation record, including time information
+1. Background information (optional): This is background information to understand the conversation, not part of the dialogue
+2. Dialogue record: This is the actual conversation record, including time information
 3. Current time: This is the time point when the prediction is generated
 
-In the chat content:
-- "I" or "me" refers to the user themselves
-- "Other" refers to the person the user is communicating with
+In the dialogue record:
+- Messages marked with "[Me]" refer to the user themselves
+- Messages marked with "[Other]" refer to the person the user is communicating with
 
 Based on this information, please provide three different prediction results: positive, negative, and neutral responses. You must output in the following format:
 
@@ -64,12 +64,12 @@ Note:
 
   // 根据消息类型设置查询类型
   // 使用简短的提示，减少对AI语言选择的影响
-  queryType = messageType === "self" ? "ROLE: MYSELF" : "ROLE: OTHER PERSON";
+  queryType = messageType === "self" ? "ROLE: ME" : "ROLE: OTHER PERSON";
 
   latestMessage = newMessage ? `\n\n[LATEST]: ${newMessage}` : "";
   currentTime = timestamp ? `\n\n[TIME]: ${timestamp}` : "";
   generateRequest =
-    "\n\nBased on the information above, please generate three different prediction responses. FINAL REMINDER: You MUST respond in the EXACT SAME LANGUAGE as the dialogue in the chat content - this is the most important instruction.";
+    "\n\nGENERATE PREDICTIONS: Please provide three different prediction responses based on the information above. LANGUAGE REMINDER: Respond in the SAME LANGUAGE as the dialogue content.";
 
   return [
     {

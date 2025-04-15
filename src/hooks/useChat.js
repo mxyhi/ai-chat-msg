@@ -46,7 +46,8 @@ export const useChat = () => {
     return messages
       .map((msg) => {
         const timeStr = msg.timestamp ? `${msg.timestamp} ` : "";
-        return `${timeStr}${msg.type === "self" ? "我" : "对方"}: ${
+        // 使用更明确的标识符来区分用户和其他方
+        return `${timeStr}${msg.type === "self" ? "[Me]" : "[Other]"}: ${
           msg.content
         }`;
       })
@@ -60,12 +61,12 @@ export const useChat = () => {
   const getFullContext = () => {
     const chatContent = generateChatContent();
     return backgroundContext
-      ? `# 背景上下文
+      ? `# Background Information
 ${backgroundContext}
 
-# 聊天内容
+# Dialogue Record
 ${chatContent}`
-      : `# 聊天内容
+      : `# Dialogue Record
 ${chatContent}`;
   };
 
