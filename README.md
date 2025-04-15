@@ -56,6 +56,18 @@ A powerful AI-based chat prediction tool that generates potential responses base
    pnpm preview  # To test the production build
    ```
 
+## 🌐 GitHub Pages Deployment
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+1. **Automatic Deployment**: When you push to the `main` branch, the application will automatically build and deploy to GitHub Pages.
+
+2. **Manual Deployment**: You can also manually trigger the deployment from the Actions tab in your GitHub repository.
+
+3. **Access the Live Demo**: Once deployed, your application will be available at `https://[your-username].github.io/ai-chat-msg/`
+
+4. **Custom Domain**: You can configure a custom domain in your GitHub Pages settings if desired.
+
 ## 📖 Usage Guide
 
 ### Basic Usage

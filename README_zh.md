@@ -56,6 +56,18 @@
    pnpm preview  # 测试生产环境构建
    ```
 
+## 🌐 GitHub Pages 部署
+
+本项目已配置使用 GitHub Actions 自动部署到 GitHub Pages。
+
+1. **自动部署**：当您推送到 `main` 分支时，应用程序将自动构建并部署到 GitHub Pages。
+
+2. **手动部署**：您也可以从 GitHub 仓库的 Actions 选项卡手动触发部署。
+
+3. **访问在线演示**：部署完成后，您的应用程序将在 `https://[您的用户名].github.io/ai-chat-msg/` 上可用。
+
+4. **自定义域名**：如果需要，您可以在 GitHub Pages 设置中配置自定义域名。
+
 ## 📖 使用指南
 
 ### 基本使用
